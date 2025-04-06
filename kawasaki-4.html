@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     * {
+  box-sizing: border-box;
+}
+
+#specs button {
+    background: none;
+    border: 0;
+    border-top: 1px solid #e5e5e9;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.techBox{
+  width: 100%;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+.d-flex {
+    display: flex !important;
+}
+
+.disclaimer{
+  font-size: 10px;
+  margin-right: 100px;
+}
+
+#gallery {
+    background: #202021;
+}
+
+#gallery h4 {
+    color: #76767c;
+    border-left: 3px solid #6c3;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+#vehicle {
+  background: lightgrey;
+}
+
+#vehicle h4 {
+    color: #76767c;
+    border-left :3px solid #6c3;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+#vehicle h3 {
+    color: #76767c;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.vehicle-container{
+    margin-left: 30px;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+
+.homePromotions  {
+    background: none;
+    height: 100%;
+    -webkit-box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(71, 71, 71, .2);
+    box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+}
+.promoBox {
+    background: #fff;
+    width: 560px;
+    height: 220px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(71, 71, 71, .2);
+    box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+    border-top: solid 5px #6c3;
+}
+.promo {
+  text-decoration: none;
+  color: black;
+}
+
+.headFive{
+  font-size: 21px;
+  text-align: left;
+  margin-left: 25px;
+}
+.pTwo{
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.pThree-first{
+    color: #5a5a60;
+    background: #f1f1f1;
+    font-weight: 700;
+    width: 30%;
+}
+
+.pThree{
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+    line-height: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.block {
+    width: 30%;
+    margin-bottom: 20px;
+    margin-left: 170px;
+    margin-right: 170px;
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.block p {
+    margin-top: 10px;
+}
+
+.blocks-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    padding: 100px 0 80px;
+}
+
+.d-md-block {
+    display: block !important;
+    margin-top: 10px;
+    margin-left: 1300px;
+}
+.d-md-block a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid lightgreen; /* Add a bottom border */
+}
+
+.logo img{
+    height: 30px;
+    width: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 0px 1px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.container{
+    background-color: none;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
+.container ::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.w-100{
+  width: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.service{
+  background: #e5e5e9;
+  padding: 20px 0;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 150px;
+}
+
+
+.x1{
+  width: 30%;
+  border-right: 1px solid black;
+  margin-left: 50px;
+}
+
+.x1 p{
+  margin-right: 20px;
+}
+
+.x2{
+  width: 32%;
+  border-right: 1px solid black;
+  margin-left: 50px;
+}
+
+.x3{
+  width: 25%;
+  margin-left: 50px;
+}
+
+.button-container {
+    width: 23%;
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: black;
+}
+
+section {
+    padding: 100px 0 80px;
+}
+
+.header-table {
+    display: inline-block;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.header-table td:nth-child(2) {
+    width: 100%;
+}
+
+.header-table h1 {
+    white-space: nowrap;
+}
+
+.headTwo {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #000;
+    line-height: 47px;
+    margin-left: 12px;
+}
+
+.headThree {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    line-height: 47px;
+    margin-left: 12px;
+}
+
+.headNine {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #000;
+    line-height: 47px;
+    margin: 0;
+}
+
+.header-table .border-line {
+    border-bottom: 1px solid #6c3;
+    height: 36px;
+    width: auto;
+    position: relative;
+    margin-left: 5px;
+}
+
+#imgSpinnerContainer {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border: solid 0px #000;
+    position: relative;
+}
+
+#view_overlay, #infoi {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#infoi {
+    z-index: 10;
+}
+
+#imgSpin {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+img {
+    border: 0;
+}
+
+.col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.d-lg-block {
+    display: block !important;
+}
+
+#specs .topDivide {
+    position: relative;
+}
+
+#specs .topDivide .divide {
+    border-right: 3px solid #6c3;
+}
+#specs .topDivide .duce {
+    max-width: 48%;
+    float: left;
+    padding-right: 2%;
+    margin-right: 2%;
+}
+
+#specs .duce {
+    margin-bottom: 30px;
+}
+
+#specs .divide {
+    margin-bottom: 30px;
+}
+
+.headSix {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #000;
+    line-height: 17px;
+    margin: 0;
+}
+
+.headFour {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #000;
+    line-height: 30px;
+    margin: 0;
+}
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  border:none;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: none;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: none;
+}
+
+.techBox {
+    margin-top: 20px;
+}
+
+.greyBlock {
+    background: #f1f1f1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pTwo.align-middle {
+    color: #5a5a60;
+    font-weight: 700;
+}
+
+/* Style the top navigation bar */
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+.navbar-bottom {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial;
+  border-bottom: 2px solid lightgreen;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.navbar-bottom a {
+  float: left;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-right{
+  float: right;
+  overflow: hidden;
+}
+
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border-right: solid 1px white;
+  outline: none;
+  color: white;
+  padding: 21px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-right .dropbtn1 {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 17px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropbtn2 {
+  font-size: 17px;
+  border: groove 1px inherit;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: grey;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: none;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Mega Menu header, if needed */
+
+.dropdown-content1 .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-right:hover .dropdown-content1 {
+  display: block;
+}
+
+
+.column-add {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background-color: grey;
+  height: 100px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-right: white 1px solid;
+}
+
+.column-add h2{
+  margin-left: 10px;
+  color: white;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: white;
+  height: 800px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.25rem;
+}
+
+.column h2{
+  margin-left: 10px;
+}
+
+/* Style links inside the columns */
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+  background-color: #ddd;
+}
+
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: white;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.25rem;
+}
+
+
+/* Style links inside the columns */
+.column1 a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column1 a:hover {
+  background-color: #ddd;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background-color: white;
+  height: 750px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.25rem;
+}
+
+.column2 h2{
+  margin-left: 10px;
+}
+
+
+/* Style links inside the columns */
+.column2 a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column2 a:hover {
+  background-color: #ddd;
+}
+
+.column3 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: white;
+  height: 750px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.25rem;
+}
+
+
+/* Style links inside the columns */
+.column3 a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column3 a:hover {
+  background-color: #ddd;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1800px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    flex: 1;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.footer-social a {
+    margin-left: 30px;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: blue;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: lightblue;
+}
+.fa-instagram{
+  color: orange;
+}
+.fa-youtube{
+  color: red;
+}
+.fa-search{
+  font-size: 20px;
+  height: 32px;
+  width: 35px;
+}
+.fa-caret-down{
+  color: lightgrey;
+  font-size: 17px;
+}
+
+.footer-phrase {
+    margin-right: 1200px;
+}
+
+.list-inline{
+  list-style: none;
+  float: left;
+}
+
+.list-inline-right{
+  list-style: none;
+  float: right;
+}
+
+.list-inline-item{
+  display: inline-block;
+}
+
+.blackBtnLng0 {
+    background: none;
+    padding: 20px 25px;
+    color: black;
+    position: relative;
+    display: inline-block;
+    border: 0;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.blackBtnLng1 {
+    background: none;
+    height: 45px;
+    padding: 20px 25px;
+    color: black;
+    position: relative;
+    display: inline-block;
+    border-right: 1px solid black;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.blackBtnLng {
+    background: #000;
+    height: 50px;
+    padding: 20px 25px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    border: 0;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+.stores{
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+}
+.stores p{
+  text-align: center;
+} 
+.stores p1{
+  text-align: center;
+  padding-top: 5px;
+}
+.stores h2{
+  text-align: center;
+}
+.float-left{
+    float: left;
+}
+.w-99{
+    width:80%;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.greenSpacer{
+    height: 5px;
+    width: 30px;
+    background: #6c3;
+    margin-left: 150px;
+}
+
+.w-98{
+  width: 30%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <a href="index-1.html"><img src="img_6.png" alt="Logo"></a>
+        </div>
+        <div class="d-md-block"><a href=""><img src="img_5.png" alt="Icon">&nbsp&nbsp販売店検索</a></div>
+        <div class="topnav">
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="検索" name="search">
+              <i class="fa fa-search"><button type="submit"></button></i>
+            </form>
+          </div>
+        </div>
+    </header>
+    
+    <div class="navbar">
+      <div class="dropdown">
+          <button class="dropbtn">取扱製品        
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column-add">
+                <h2>モーターサイクル</h2>
+            </div>
+            <div class="column-add">
+              <h2>ウォータークラフト </h2>
+            </div>
+            <div class="column-add">
+              <h2>オフロード四輪車</h2>
+            </div>
+            <div class="column-add">
+              <h2>ATV </h2>
+            </div>
+            </div>
+          </div>
+      </div>
+      <!-- New dropdown button -->
+      <div class="dropdown">
+          <button class="dropbtn">パーツ＆アパレル       
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <div class="row">
+                <div class="column">
+                  <h2>オンラインショップ</h2>
+                  <a href="#">カワサキオンラインショップ</a>
+                  <h2>パーツ</h2>
+                  <a href="#">パーツカタログ検索</a>
+                  <h2>オリジナルウェア</h2>
+                  <a href="#">ブルゾン</a>
+                  <a href="#">カジュアルウェア</a>
+                  <a href="#">キャップ</a>
+                  <a href="#">メカニック</a>
+                  <h2>カタログ</h2>
+                  <a href="#">2023-2024 FALL & WINTER COLLECTION</a>
+                  <a href="#">WEAR & GOODS, ACCESSORIES CATALOG 2023</a>
+              </div>
+              <div class="column">
+                <h2>カワサキプラザアパレル（カワサキプラザ限定商品）</h2>
+                <a href="#">プラザアパレル</a>
+                <a href="#">23年春夏 デジタルカタログ</a>
+                <a href="#">23年秋冬 デジタルカタログ</a>
+                <h2>オリジナルグッズ</h2>
+                <a href="#">バッグ</a>
+                <a href="#">ストラップ・キーホルダー</a>
+                <a href="#">ステッカー・エンブレム</a>
+                <a href="#">グッズ</a>
+              </div>
+              <div class="column">
+                <h2>ライディングギア</h2>
+                <a href="#">ジャケット</a>
+                <a href="#">グローブ</a>
+                <a href="#">オフロードウェア他</a>
+                <a href="#">レインギア</a>
+                <h2>その他用品</h2>
+                <a href="#">メンテナンス</a>
+                <a href="#">盗難防止ロック他</a>
+                <a href="#">タッチアップペイント</a>
+                <a href="#">オイル</a>
+              </div>
+              </div>
+          </div>
+        </div>
+    
+    <div class="dropdown-right">
+      <button class="dropbtn1"><a href="https://www.kawasaki-cp.khi.co.jp/recall/">リコール
+      </a>
+      </button>
+    </div>
+    
+    <div class="dropdown-right">
+      <button class="dropbtn1">ニュース・イベント     
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content1">
+          <div class="row">
+            <div class="column1">
+              <a href="#">ニュース</a>
+              <a href="#">イベント</a>
+          </div>
+          <div class="column1">
+              <h2>モーターサイクルレース</h2>
+              <a href="#">Kawasaki Team Green Program</a>
+              <a href="#">AUTOPOLIS</a>
+              <a href="#">SPA直入</a>
+          </div>
+          <div class="column1">
+              <h2>ジェットスキーレース</h2>
+              <a href="#">KAZE JET SKI 耐久イベント</a>
+              <a href="#">IJSBA</a>
+          </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="dropdown-right">
+      <button class="dropbtn1"><a href="https://www.kawasaki-cp.khi.co.jp/recall/">SHOP 
+        </a>
+      </button>
+      </div>
+    
+    <div class="dropdown-right">
+      <button class="dropbtn1">カワサキをお持ちの方へ   
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content1">
+          <div class="row">
+            <div class="column2">
+              <a href="#">カワサキライダーズライダーズクラブKAZE</a>
+              <h2>サービス情報検索</h2>
+              <a href="#">サービスデータ</a>
+              <a href="#">取扱説明書</a>
+          </div>
+          <div class="column2">
+              <h2>モーターサイクル</h2>
+              <a href="#">セーフティーライディング</a>
+              <a href="#">ならし運転について</a>
+              <a href="#">カワサキケア</a>
+              <a href="#">点検メンテナンス</a>
+              <a href="#">保証制度について</a>
+              <a href="#">保証登録情報検索</a>
+              <a href="#">Rideoligy App</a>
+              <a href="#">リコール</a>
+              <a href="#">クイックガイド</a>
+              <a href="#">新車ご購入アンケート</a>
+              <a href="#">環境への取り組み</a>
+          </div>
+          <div class="column2">
+              <h2>ジェットスキー</h2>
+              <a href="#">セーフティーライディング</a>
+              <a href="#">リコール</a>
+              <a href="#">新艇ご購入アンケート</a>
+          </div>
+          <div class="column2">
+            <h2>オフロード四輪車</h2>
+        </div>
+        <div class="column2">
+          <h2>NOSLISU</h2>
+      </div>
+          </div>
+    </div>
+    </div>
+    
+    <div class="dropdown-right">
+      <button class="dropbtn1">購入検討中の方へ 
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content1">
+          <div class="row">
+            <div class="column3">
+              <a href="#">販売店検索</a>
+              <a href="#">noslisu取扱店</a>
+              <a href="#">オンライン商談</a>
+          </div>
+          <div class="column3">
+              <a href="#">ピックアップモデル</a>
+              <a href="#">キャンペーン</a>
+          </div>
+          <div class="column3">
+              <h2>モデル比較</h2>
+              <a href="#">Kawasaki モーターサイクル</a>
+              <a href="#">Bimota モーターサイクル</a>
+              <a href="#">ウォータークラフト</a>
+              <a href="#">オフロード四輪車</a>
+              <a href="#">ATV</a>
+          </div>
+          <div class="column3">
+            <a href="#">カワサキテクノロジー</a>
+            <a href="#">受賞歴・レビュー</a>
+        </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <img src="top-pic/-4.png" alt="" class="w-100">
+    </div>
+
+    <div class="navbar-bottom">
+       <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="" class="blackBtnLng1"><strong>2024 NINJA e-1</strong></a>
+        </li>
+      
+        <li class="list-inline-item">
+          <a href="" class="blackBtnLng0">スペック</a>
+        </li>
+
+        <li class="list-inline-item">
+          <a href="" class="blackBtnLng0"> ギャラリー</a>
+        </li>
+
+        <li class="list-inline-item">
+          <a href="" class="blackBtnLng0">キャンペーン</a>
+        </li>
+
+        <li class="list-inline-item">
+          <a href="" class="blackBtnLng0">ファミリーモデル</a>
+        </li>
+    </ul>
+
+    <ul class="list-inline-right">
+      <li class="list-inline-item">
+        <a href="" class="blackBtnLng"><img src="img_5.png" alt=""> 販売店検索</a>
+      </li>
+
+      <li class="list-inline-item">
+        <a href="" class="blackBtnLng"><img src="img_5.png" alt=""> アクセサリーコンフィギュレータ</a>
+      </li>
+   </ul>
+      </div>
+
+
+      <div class="service">
+        <div class="container">
+          <div class="row">
+
+            <div class="x1">
+              <h2 class="pOne">メーカー希望小売価格</h2>
+              <h1 class="pTwo">1,067,000円</h1>
+              <p>メーカー希望小売価格は消費税を含む参考価格です。登録などに伴う諸費用等は含まれません。</p>
+            </div>
+
+            <div class="x2">
+              <h1 class="pOne">アンダー400スペシャルクレジットキャンペーン</h1>
+              <h2 class="pTwo">実質年利2.2％ 憧れの最新モデルでモーターサイクルライフを始めよう</h2>
+              <div class="button-container">
+                <button>詳細はこちら</button>
+          </div>
+            </button>
+            </div>
+
+            <div class="x3">
+              <p>モデル比較</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
+      <section id="specs">
+        <div class="container">
+          <table role="presentation" class="header-table">
+            <tbody>
+              <tr>
+                <td role="presentation">
+                  <h1 class="headTwo hightlightNav"> スペック</h1>
+                </td>
+                <td>
+                  <div class="border-line"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-6 threeSixty">
+            <div id="imgSpinnerContainer" style>
+              <div id="view_overlay" style="z-index: 100"></div>
+              <div id="infoi">
+                <img id="imgSpin" src="content/-4.jpg" width="1100" alt="">
+              </div>
+            </div>
+          </div>
+
+            <div class="col-sm-12 col-md-6" id="featuredSpecHeader">
+              <div class="d-lg-block">
+                <div class="topDivide clearfix">
+                <div class="duce divide">
+                  <div class="headSix">クリーンな</div>
+                  <div class="headFour">ゼロエミッション</div>
+                </div>
+
+                <div class="duce">
+                  <div class="headSix">一時的に加速力を向上させる</div>
+                  <div class="headFour">E-BOOST機能</div>
+                </div>
+
+                <button type="button" class="collapsible">テクノロジー</button>
+                <div class="content">
+                <p>各アイコンをクリックするとテクノロジーの詳細が表示されます。</p>
+                <div class="techbox">
+                  <div class="col-sm-12 col-md-4 greyBlock">
+                    <table>
+                      <tr>
+                        <td class="align-middle pTwo">エンジンマネジメントテクノロジー</td>
+                      </tr>
+                    </table>
+                  </div>
+                  
+                  <div class="col-sm-12 col-md-8">
+                  <div class="d-flex align-items-center">
+                    <img src="spec-1.png" alt="">
+                    <div class="headFive p1-4">アシスト＆スリッパークラッチ</div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-8">
+                  <div class="d-flex align-items-center">
+                    <img src="spec-2.png" alt="">
+                    <div class="headFive p1-4">スマートフォンコンネクト</div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 greyBlock">
+                  <table>
+                    <tr>
+                      <td class="align-middle pTwo">シャーシマネジメントテクノロジー</td>
+                    </tr>
+                  </table>
+                </div>
+                
+                <div class="col-sm-12 col-md-8">
+                <div class="d-flex align-items-center">
+                  <img src="spec-3.png" alt="">
+                  <div class="headFive p1-4">ABS (アンチロックブレーキシステム)</div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-8">
+                <div class="d-flex align-items-center">
+                  <img src="spec-4.png" alt="">
+                  <div class="headFive p1-4">エルゴフィット</div>
+                </div>
+              </div>
+
+                </div>
+                </div>
+
+                <button type="button" class="collapsible">パワーユニット・駆動方式</button>
+                <div class="content">
+                
+                  <table class="table table-borderless specTable">
+                    <tbody>
+
+                      <tr>
+                        <td class="pThree-first">定格出力</td>
+                        <td class="pThree">0.98kW</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">最高出力</td>
+                        <td class="pThree">9.0kW (12 PS) / 2,600 - 4,000rpm</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">最大トルク</td>
+                        <td class="pThree">40N･m (4.1kgf･m) / 0 - 1,600rpm</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">モーター種類</td>
+                        <td class="pThree">交流同期電動機</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">走行モード</td>
+                        <td class="pThree">ROAD / ECO</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">電力消費率</td>
+                        <td class="pThree">52Wh/km (60km/h定地走行値)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">一充電走行距離</td>
+                        <td class="pThree">	55km (ROADモード、60km/h定地走行値、1名乗車時)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">バッテリー</td>
+                        <td class="pThree">リチウムイオンバッテリー x2</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">バッテリー総電圧 / 総電力量</td>
+                        <td class="pThree">50.4V / 30Ah x2</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">バッテリー重量</td>
+                        <td class="pThree">11.5kg x2</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">バッテリー充電時間</td>
+                        <td class="pThree">3.7時間 x2</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">トランスミッション形式</td>
+                        <td class="pThree">オートマチック</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">一次減速比</td>
+                        <td class="pThree">	3.210 (61/19)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">二次減速比</td>
+                        <td class="pThree">3.866 (58/15)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">動力伝達方式</td>
+                        <td class="pThree">チェーン</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+                <button type="button" class="collapsible">走行性能・シャーシ</button>
+                <div class="content">
+                
+                  <table class="table table-borderless specTable">
+                    <tbody>
+
+                      <tr>
+                        <td class="pThree-first">フレーム形式</td>
+                        <td class="pThree">トレリス (高張力鋼)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">懸架方式 (前)</td>
+                        <td class="pThree">テレスコピック (インナーチューブ径41mm)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">懸架方式 (後)</td>
+                        <td class="pThree">スイングアーム (スプリングプリロード調整可能)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">ホイールトラベル (前)</td>
+                        <td class="pThree">120mm</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">ホイールトラベル (後)</td>
+                        <td class="pThree">133mm</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">キャスター</td>
+                        <td class="pThree">24.4°</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">トレール</td>
+                        <td class="pThree">93mm</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">ステアリングアングル　（左/右）	</td>
+                        <td class="pThree">35° / 35°</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">タイヤサイズ (前)</td>
+                        <td class="pThree">100/80-17M/C 52S</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">タイヤサイズ (後)</td>
+                        <td class="pThree">130/70-17M/C 62S</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">ブレーキ形式 (前)</td>
+                        <td class="pThree">シングルディスク (外径290mm)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">キャリパー (前)</td>
+                        <td class="pThree">デュアルピストン</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">ブレーキ形式 (後)</td>
+                        <td class="pThree">シングルディスク (外径220mm)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">キャリパー (後)</td>
+                        <td class="pThree">デュアルピストン</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+
+                </div>
+                <button type="button" class="collapsible">寸法・重量</button>
+                <div class="content">
+                
+                  <table class="table table-borderless specTable">
+                    <tbody>
+
+                      <tr>
+                        <td class="pThree-first">全長×全幅×全高</td>
+                        <td class="pThree">1,980mm x 685mm x 1,105mm</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">軸間距離</td>
+                        <td class="pThree">	1,370mm</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">最低地上高</td>
+                        <td class="pThree">160mm</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">シート高</td>
+                        <td class="pThree">785mm</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">車両重量**</td>
+                        <td class="pThree">140kg (バッテリー2個含む)</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">生産国</td>
+                        <td class="pThree">タイ王国</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">型式</td>
+                        <td class="pThree">ZAD-NX011A</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">メーカー保証</td>
+                        <td class="pThree">2年</td>
+                      </tr>
+
+                      <tr>
+                        <td class="pThree-first">注記</td>
+                        <td class="pThree">※車両本体に充電器、充電アダプター等は付属しておりません。</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+
+                <p class="disclaimer">
+                  ※1：燃料消費率は、定められた試験条件のもとでの値です。お客様の使用環境（気象、渋滞等）や運転方法、車両状態（装備、仕様）や整備状況などの諸条件により異なります。 ※2：定地燃費値は、車速一定で走行した実測にもとづいた燃料消費率です。 ※3：ＷＭＴＣモード値とは、発進・加速・停止などを含んだ国際基準となっている走行モードで測定された排出ガス試験結果にもとづいた計算値です。走行モードのクラスは排気量と最高速度によって分類されます。
+                </p>
+
+                <p class="disclaimer">
+                  **車両重量(整備質量)は走行(航走)に必要な整備を行った状態での重量です。重量には油脂類やバッテリー液などが含まれます。
+                </p>
+
+                <p class="disclaimer">
+                  走行(航走)画像は管理された環境においてプロライダーによる走行を撮影したものです。走行(航走)に際しては適切な装備を着用の上、常に安全を心がけてください。
+                </p>
+
+                <p class="disclaimer">
+                  仕様および諸元、価格は予告なく変更することがあります。
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </section>
+
+
+      <section id="gallery">
+        <div class="container">
+          <table role="presentation" class="header-table">
+            <tbody>
+              <tr>
+                <td role="presentation">
+                  <h1 class="headThree hightlightNav"> ギャラリー</h1>
+                </td>
+                <td>
+                  <div class="border-line"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div id="photoGallery">
+            <h4 class="headFour">フォト</h4>
+            <div class="row no-gutters">
+              <img src="gallery-4/-1.jpg" alt="" class="w-98">
+              <img src="gallery-4/-2.jpg" alt="" class="w-98">
+              <img src="gallery-4/-3.jpg" alt="" class="w-98">
+              <img src="gallery-4/-4.jpg" alt="" class="w-98">
+              <img src="gallery-4/-5.jpg" alt="" class="w-98">
+              <img src="gallery-4/-6.jpg" alt="" class="w-98">
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <div class="homePromotions">
+  <section class="blocks-section">
+      <table role="presentation" class="header-table">
+        <tbody>
+          <tr>
+            <td role="presentation">
+              <h1 class="headNine hightlightNav"> キャンペーン</h1>
+            </td>
+            <td>
+              <div class="border-line"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    <div class="block">
+    <div class="promoContainer card">
+      <a href="" class="promo">
+        <img src="news_3.png" alt="Image 2">
+        <div class="promoBox">
+        <h2 class="headFive">カワサキプラザ スペシャルクレジットキャンペーン</h2>
+        <p class="pTwo">カワサキプラザクレジットを利用して憧れのモーターサイクルライフを楽しもう！</p>
+        <p class="pTwo ends"><strong>キャンペーン終了: 2024年5月31日</strong></p>
+        <p class="pTwo ends"><strong>詳細はこちら</strong></p>
+    </div>
+  </a>
+  </div>
+</div>
+
+</section>
+</div>
+
+
+<section id="vehicle">
+  <div class="container">
+    <table role="presentation" class="header-table">
+      <tbody>
+        <tr>
+          <td role="presentation">
+            <h1 class="headThree hightlightNav"> ファミリーモデル</h1>
+          </td>
+          <td>
+            <div class="border-line"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="photoVehicle">
+      <h4 class="headFour"><strong>EV</strong></h4>
+      <h3 class="headFour">Z e-1</h3>
+
+      <div class="row">   
+        <div class="vehicle-container">
+        <div class="float-left stores">
+          <div class="card">
+          <a href="kawasaki-5.html"><img src="motor_5.png" alt="" class="w-99"></a>
+          <p1><strong>2024</strong></p1>
+          <h2>Z e-1</h2>
+          <div class="greenSpacer"></div>
+          <p> メーカー希望小売価格1,012,000円</p>
+          <div class="snipe1 headSix1">.</div>
+         </div>
+        </div>
+      </div>
+
+  </div>
+
+  </div>
+</div>
+</section>
+
+
+  
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+        <h3>カワサキについて</h3>
+        <ul>
+          <li><a href="#">ヒストリー</a></li> 
+          <li><a href="#">ヘリテージ</a></li> 
+          <li><a href="#">インターナショナルサイト</a></li> 
+      </ul>
+
+      <ul>
+        <li><a href="#">採用情報</a></li> 
+        <li><a href="#">リーガルポリシー</a></li> 
+        <li><a href="#">会社概要</a></li> 
+    </ul>
+      </div>
+    
+
+    <div class="footer-section">
+        <h3>販売店情報</h3>
+        <ul>
+            <li><a href="#">販売店検索</a></li>
+        </ul>
+    </div>
+
+
+    <div class="footer-section">
+      <h3>カワサキ公式メールマガジン</h3>
+      <ul>
+          <li><a href="#">メールマガジンのご登録</a></li>
+          <li><a href="#">メールマガジンの解除</a></li>
+      </ul>
+     </div>
+    </div>
+
+    <div class="footer-content">
+      <div class="footer-section">
+          <h3>ニュース</h3>
+          <ul>
+              <li><a href="#">New モデル</a></li>
+              <li><a href="#">受賞歴・レビュー</a></li>
+              <li><a href="#">イベント</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">ニュース</a></li>
+        </ul>
+        </div>
+      
+  
+      <div class="footer-section">
+          <h3>その他</h3>
+          <ul>
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">業界リンク</a></li>
+              <li><a href="#">FAQ</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3></h3>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+    </div>
+      
+          <!-- Add more sections as needed -->
+      
+          <div class="footer-social">
+            <div class="footer-phrase">
+          <p>Connect with us for the latest updates!</p>
+           </div>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-youtube"></a>
+          </div>
+      </footer>
+      </div>
+
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+    }
+  });
+}
+      </script>
+
+</body>
+</html>

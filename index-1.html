@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+.homeApparel{
+  background-color: #717171;
+}
+
+.blocks-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    padding: 100px 0 80px;
+}
+
+.homePromotions  {
+    background: lightgrey;
+    height: 100%;
+    -webkit-box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(71, 71, 71, .2);
+    box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+}
+.promoBox {
+    background: #fff;
+    width: 560px;
+    height: 200px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(71, 71, 71, .2);
+    box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+    border-top: solid 5px #6c3;
+}
+
+.promoBox1 {
+    background: black;
+    width: 560px;
+    height: 560px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(71, 71, 71, .2);
+    box-shadow: 0 0 10px 0 rgba(71,71,71,.2);
+}
+
+.promoBox1 p{
+  color: white;
+}
+
+.promoBox1 p1{
+  color: #6c3;
+  margin-top: 30px;
+}
+
+.headFive{
+  font-size: 21px;
+}
+.pTwo{
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.block {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.block p {
+    margin-top: 10px;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.button-container button {
+    padding: 20px 20px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: black;
+}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid lightgreen; /* Add a bottom border */
+}
+
+.logo img{
+    height: 30px;
+    width: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 0px 1px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.container{
+    background-color: none;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
+.container ::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container1{
+    background-color: none;
+    width: 80%;
+    max-width: 1920px;
+    margin: auto;
+    margin-top: 100px;
+}
+.container1 ::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.stores{
+    width: 33%;
+    margin-top: 50px;
+}
+.stores p{
+  text-align: center;
+} 
+.stores h1{
+  text-align: center;
+}
+.stores h2{
+  text-align: center;
+}
+.float-left{
+    float: left;
+}
+.w-100{
+    width:70%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.greenSpacer{
+    height: 5px;
+    width: 30px;
+    background: #6c3;
+    margin-left: 300px;
+}
+
+.greenSpacer1{
+    height: 5px;
+    width: 150px;
+    background: #6c3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.snipe{
+    background: #6c3;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.headSix{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #000;
+    line-height: 17px;
+    margin: 0;
+    margin-left: 220px;
+}
+
+.snipe1{
+    background: none;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.headSix1{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white;
+    line-height: 17px;
+    margin: 0;
+}
+
+.d-md-block {
+    display: block !important;
+    margin-bottom:5px;
+    margin-left: 1300px;
+}
+.d-md-block a {
+    color: white;
+    text-decoration: none;
+}
+
+.pOne{
+  margin-left: 20px;
+  border-bottom: dotted 3px #6c3;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    min-height: 300px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-right{
+  float: right;
+  overflow: hidden;
+}
+
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border-right: solid 1px white;
+  outline: none;
+  color: white;
+  padding: 21px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-right .dropbtn1 {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 17px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropbtn2 {
+  font-size: 17px;
+  border: groove 1px inherit;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: grey;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: none;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Mega Menu header, if needed */
+
+.dropdown-content1 .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-right:hover .dropdown-content1 {
+  display: block;
+}
+
+.column-add {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background-color: grey;
+  height: 100px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-right: white 1px solid;
+}
+
+.column-add h2{
+  margin-left: 10px;
+  color: white;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: white;
+  height: 800px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.25rem;
+}
+
+/* Style links inside the columns */
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+  background-color: #ddd;
+}
+
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: white;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.25rem;
+}
+
+/* Style links inside the columns */
+.column1 a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column1 a:hover {
+  background-color: #ddd;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background-color: white;
+  height: 750px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.25rem;
+}
+
+/* Style links inside the columns */
+.column2 a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column2 a:hover {
+  background-color: #ddd;
+}
+
+.column3 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: white;
+  height: 750px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.25rem;
+}
+
+/* Style links inside the columns */
+.column3 a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column3 a:hover {
+  background-color: #ddd;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1800px;
+}
+
+.footer-section {
+    flex:1;
+    padding: 20px;
+    max-width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    flex: 1;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.footer-social a {
+    margin-left: 30px;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: blue;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: lightblue;
+}
+.fa-instagram{
+  color: orange;
+}
+.fa-youtube{
+  color: red;
+}
+.fa-search{
+  font-size: 20px;
+  height: 32px;
+  width: 35px;
+}
+.fa-caret-down{
+  color: lightgrey;
+  font-size: 17px;
+}
+
+.footer-phrase {
+    margin-right: 1200px;
+}
+
+.slider-container1 {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.image-slider {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.image-slider img {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-left: 120px;
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: lightgrey;
+    color: #6c3;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#prevBtn {
+    left: 100px;
+}
+
+#nextBtn {
+    right: 100px;
+}
+
+section {
+    padding: 100px 0 80px;
+}
+
+.header-table {
+    display: inline-block;
+    margin-bottom: 60px;
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.header-table td:nth-child(2) {
+    width: 100%;
+}
+
+.header-table h1 {
+    white-space: nowrap;
+}
+
+.headTwo {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #000;
+    line-height: 47px;
+    margin: 0;
+}
+
+.header-table .border-line {
+    border-bottom: 1px solid #6c3;
+    height: 36px;
+    width: auto;
+    position: relative;
+    margin-left: 5px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="logo">
+        <img src="img_6.png" alt="Logo">
+    </div>
+    <div class="d-md-block"><a href=""><img src="img_5.png" alt="Icon">&nbsp&nbsp販売店検索</a></div>
+    <div class="topnav">
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="検索" name="search">
+          <i class="fa fa-search"><button type="submit"></button></i>
+        </form>
+      </div>
+    </div>
+</header>
+
+<div class="navbar">
+  <div class="dropdown">
+      <button class="dropbtn">取扱製品        
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column-add">
+            <h2>モーターサイクル</h2>
+        </div>
+        <div class="column-add">
+          <h2>ウォータークラフト </h2>
+        </div>
+        <div class="column-add">
+          <h2>オフロード四輪車</h2>
+        </div>
+        <div class="column-add">
+          <h2>ATV </h2>
+        </div>
+        </div>
+      </div>
+  </div>
+  <!-- New dropdown button -->
+  <div class="dropdown">
+      <button class="dropbtn">パーツ＆アパレル       
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+              <h2>オンラインショップ</h2>
+              <a href="#">カワサキオンラインショップ</a>
+              <h2>パーツ</h2>
+              <a href="#">パーツカタログ検索</a>
+              <h2>オリジナルウェア</h2>
+              <a href="#">ブルゾン</a>
+              <a href="#">カジュアルウェア</a>
+              <a href="#">キャップ</a>
+              <a href="#">メカニック</a>
+              <h2>カタログ</h2>
+              <a href="#">2023-2024 FALL & WINTER COLLECTION</a>
+              <a href="#">WEAR & GOODS, ACCESSORIES CATALOG 2023</a>
+          </div>
+          <div class="column">
+            <h2>カワサキプラザアパレル（カワサキプラザ限定商品）</h2>
+            <a href="#">プラザアパレル</a>
+            <a href="#">23年春夏 デジタルカタログ</a>
+            <a href="#">23年秋冬 デジタルカタログ</a>
+            <h2>オリジナルグッズ</h2>
+            <a href="#">バッグ</a>
+            <a href="#">ストラップ・キーホルダー</a>
+            <a href="#">ステッカー・エンブレム</a>
+            <a href="#">グッズ</a>
+          </div>
+          <div class="column">
+            <h2>ライディングギア</h2>
+            <a href="#">ジャケット</a>
+            <a href="#">グローブ</a>
+            <a href="#">オフロードウェア他</a>
+            <a href="#">レインギア</a>
+            <h2>その他用品</h2>
+            <a href="#">メンテナンス</a>
+            <a href="#">盗難防止ロック他</a>
+            <a href="#">タッチアップペイント</a>
+            <a href="#">オイル</a>
+          </div>
+          </div>
+      </div>
+    </div>
+
+<div class="dropdown-right">
+  <button class="dropbtn1"><a href="https://www.kawasaki-cp.khi.co.jp/recall/">リコール
+  </a>
+  </button>
+</div>
+
+<div class="dropdown-right">
+  <button class="dropbtn1">ニュース・イベント     
+      <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content1">
+      <div class="row">
+        <div class="column1">
+          <a href="#">ニュース</a>
+          <a href="#">イベント</a>
+      </div>
+      <div class="column1">
+          <h2>モーターサイクルレース</h2>
+          <a href="#">Kawasaki Team Green Program</a>
+          <a href="#">AUTOPOLIS</a>
+          <a href="#">SPA直入</a>
+      </div>
+      <div class="column1">
+          <h2>ジェットスキーレース</h2>
+          <a href="#">KAZE JET SKI 耐久イベント</a>
+          <a href="#">IJSBA</a>
+      </div>
+      </div>
+  </div>
+</div>
+
+<div class="dropdown-right">
+  <button class="dropbtn1"><a href="https://www.kawasaki-cp.khi.co.jp/recall/">SHOP 
+    </a>
+  </button>
+  </div>
+
+<div class="dropdown-right">
+  <button class="dropbtn1">カワサキをお持ちの方へ   
+      <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content1">
+      <div class="row">
+        <div class="column2">
+          <a href="#">カワサキライダーズライダーズクラブKAZE</a>
+          <h2>サービス情報検索</h2>
+          <a href="#">サービスデータ</a>
+          <a href="#">取扱説明書</a>
+      </div>
+      <div class="column2">
+          <h2>モーターサイクル</h2>
+          <a href="#">セーフティーライディング</a>
+          <a href="#">ならし運転について</a>
+          <a href="#">カワサキケア</a>
+          <a href="#">点検メンテナンス</a>
+          <a href="#">保証制度について</a>
+          <a href="#">保証登録情報検索</a>
+          <a href="#">Rideoligy App</a>
+          <a href="#">リコール</a>
+          <a href="#">クイックガイド</a>
+          <a href="#">新車ご購入アンケート</a>
+          <a href="#">環境への取り組み</a>
+      </div>
+      <div class="column2">
+          <h2>ジェットスキー</h2>
+          <a href="#">セーフティーライディング</a>
+          <a href="#">リコール</a>
+          <a href="#">新艇ご購入アンケート</a>
+      </div>
+      <div class="column2">
+        <h2>オフロード四輪車</h2>
+    </div>
+    <div class="column2">
+      <h2>NOSLISU</h2>
+  </div>
+      </div>
+</div>
+</div>
+
+<div class="dropdown-right">
+  <button class="dropbtn1">購入検討中の方へ 
+      <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content1">
+      <div class="row">
+        <div class="column3">
+          <a href="#">販売店検索</a>
+          <a href="#">noslisu取扱店</a>
+          <a href="#">オンライン商談</a>
+      </div>
+      <div class="column3">
+          <a href="#">ピックアップモデル</a>
+          <a href="#">キャンペーン</a>
+      </div>
+      <div class="column3">
+          <h2>モデル比較</h2>
+          <a href="#">Kawasaki モーターサイクル</a>
+          <a href="#">Bimota モーターサイクル</a>
+          <a href="#">ウォータークラフト</a>
+          <a href="#">オフロード四輪車</a>
+          <a href="#">ATV</a>
+      </div>
+      <div class="column3">
+        <a href="#">カワサキテクノロジー</a>
+        <a href="#">受賞歴・レビュー</a>
+    </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+    
+<!-- Slideshow container -->
+<div class="homePromotions">
+<div class="slideshow-container">
+ 
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="slider/-1.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="slider/-2.jpeg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="slider/-3.jpeg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <br>
+  
+  <!-- The dots/circles -->
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+
+
+
+  <section class="blocks-section">
+    
+    <table role="presentation" class="header-table">
+      <tbody>
+        <tr>
+          <td role="presentation">
+            <h1 class="headTwo hightlightNav"> キャンペーン</h1>
+          </td>
+          <td>
+            <div class="border-line"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="block">
+    <div class="promoContainer card">
+        <a href="http://"><img src="news_1.png" alt="Image 1">
+        <div class="promoBox">
+        <h2 class="headFive">LIMITED SALE</h2>
+        <p class="pTwo">ライディングウェアはもちろん、日常使いでもカジュアルに着こなせるカワサキプラザアパレルが最大50％OFF</p>
+        <p class="pTwo ends"><strong>キャンペーン終了: 2024年5月31日</strong></p>
+      </div>
+    </a>
+      </div>
+    </div>
+
+    <div class="block">
+    <div class="promoContainer card">
+      <a href="http://"><img src="news_2.png" alt="Image 2">
+        <div class="promoBox">
+        <h2 class="headFive">カワサキプラザ スペシャルクレジットキャンペーン</h2>
+        <p class="pTwo">カワサキプラザクレジットを利用して憧れのモーターサイクルライフを楽しもう！</p>
+        <p class="pTwo ends"><strong>キャンペーン終了: 2024年5月31日</strong></p>
+    </div>
+  </a>
+  </div>
+</div>
+
+    <div class="block">
+    <div class="promoContainer card">
+      <a href="http://"><img src="news_3.png" alt="Image 3">
+        <div class="promoBox">
+        <h2 class="headFive">アンダー400スペシャルクレジットキャンペーン</h2>
+        <p class="pTwo">実質年利2.2％ 憧れの最新モデルでモーターサイクルライフを始めよう</p>
+        <p class="pTwo ends"><strong>キャンペーン終了: 2024年5月31日</strong></p>
+    </div>
+  </a>
+  </div>
+</div>
+
+    <div class="button-container">
+        <button>すべて表示</button>
+  </div>
+</section>
+</div>
+
+
+<section class="blocks-section">
+  <div class="container">
+
+    <table role="presentation" class="header-table">
+      <tbody>
+        <tr>
+          <td role="presentation">
+            <h1 class="headTwo hightlightNav"> ピックアップモデル</h1>
+          </td>
+          <td>
+            <div class="border-line"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="clearfix">
+    <div class="float-left stores">
+        <a href="kawasaki-1.html"><img src="motor_1.png" alt="" class="w-100"></a>
+        <h1>2025</h1>
+        <h2>ELIMINATOR</h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格814,000円</p>
+        <div class="snipe1 headSix1">.</div>
+       </div>
+
+       <div class="float-left stores">
+        <a href="kawasaki-2.html"><img src="motor_2.png" alt="" class="w-100"></a>
+        <h1>2025</h1>
+        <h2>ELIMINATOR SE</h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格913,000円</p>
+        <div class="snipe1 headSix1">.</div>
+       </div>
+
+       <div class="float-left stores">
+        <a href="kawasaki-3.html"><img src="motor_3.png" alt="" class="w-100"></a>
+        <h1> NEW 2025</h1>
+        <h2>ELIMINATOR PLAZA EDITION</h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格869,000円</p>
+        <div class="snipe headSix"><strong>カワサキプラザ専用モデル</strong></div>
+       </div>
+
+       <div class="float-left stores">
+        <a href="kawasaki-4.html"><img src="motor_4.png" alt="" class="w-100"></a>
+        <h1>ALL-NEW 2024</h1>
+        <h2>NINJA e-1</h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格1,067,000円</p>
+        <div class="snipe1 headSix1">.</div>
+       </div>
+
+       <div class="float-left stores">
+        <a href="kawasaki-5.html"><img src="motor_5.png" alt="" class="w-100"></a>
+        <h1>ALL-NEW 2024</h1>
+        <h2>Z e-1</h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格1,012,000円</p>
+        <div class="snipe1 headSix1">.</div>
+       </div>
+
+       <div class="float-left stores">
+        <a href="kawasaki-6.html"><img src="motor_6.png" alt="" class="w-100"></a>
+        <h1>NEW 2024</h1>
+        <h2>JET SKI ULTRA 160LX-S</h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格2,937,000円</p>
+        <div class="snipe1 headSix1">.</div>
+       </div>
+
+       <div class="float-left stores">
+        <a href="kawasaki-7.html"><img src="motor_7.png" alt="" class="w-100"></a>
+        <h1>NEW 2024</h1>
+        <h2> &nbspNINJA ZX-10R 40th ANNIVERSARY EDITION </h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格2,398,000円</p>
+        <div class="snipe headSix"><strong>カワサキプラザ専用モデル</strong></div>
+       </div>
+       
+       <div class="float-left stores">
+        <a href="kawasaki-8.html"><img src="motor_8.png" class="w-100"></a>
+        <h1>NEW 2024</h1>
+        <h2> &nbsp &nbspNINJA ZX-6R 40th ANNIVERSARY EDITION</h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格1,595,000円</p>
+        <div class="snipe headSix"><strong>カワサキプラザ専用モデル</strong></div>
+       </div>
+       
+
+       <div class="float-left stores">
+        <a href="kawasaki-9.html"><img src="motor_9.png" alt="" class="w-100"></a>
+        <h1>NEW 2024</h1>
+        <h2>NINJA ZX-4RR 40th ANNIVERSARY EDITION</h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格1,117,000円</p>
+        <div class="snipe1 headSix1">.</div>
+       </div>
+
+       <div class="float-left stores">
+        <a href="kawasaki-10.html"><img src="motor_10.png" alt="" class="w-100"></a>
+        <h1>NEW 2024</h1>
+        <h2>&nbspNINJA 1000SX 40th ANNIVERSARY EDITION</h2>
+        <div class="greenSpacer"></div>
+        <p> メーカー希望小売価格1,628,000円</p>
+        <div class="snipe headSix"><strong>カワサキプラザ専用モデル</strong></div>
+       </div>
+
+    </div>
+    </div>
+    <div class="button-container">
+      <button>すべて表示</button>
+</div>
+</section>
+ </div>
+
+
+ <div class="homeApparel">
+  <section class="blocks-section">
+
+    <table role="presentation" class="header-table">
+      <tbody>
+        <tr>
+          <td role="presentation">
+            <h1 class="headTwo hightlightNav"> アクセサリー＆グッズ</h1>
+          </td>
+          <td>
+            <div class="border-line"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="block">
+      <div class="promoContainer card1">
+        <div class="promoBox1">
+        <p1>プラザアパレル</p1>
+        <p>PLAZA APPAREL</p>
+        <a href="https://www3.kawasaki-motors.com/mc/plazastyle/?_gl=1*17ew8qu*_ga*MjI1ODg0OTU3LjE3MTAyMzA2NTc.*_ga_7MR6HLD4F7*MTcxMDk4NDIzMi4xNy4xLjE3MTA5ODc1MDQuNTYuMC4w"><img src="news_4.png" alt="Image 4"></a>
+    </div>
+    </div>
+    </div>
+
+    <div class="block">
+      <div class="promoContainer card1">
+        <div class="promoBox1">
+      <p1>オリジナルウェア &amp; グッズ</p1>
+      <p>ORIGINAL WEAR &amp; GOODS</p>
+        <a href="https://kawasaki-onlineshop.jp/shop/default.aspx?_gl=1*17ew8qu*_ga*MjI1ODg0OTU3LjE3MTAyMzA2NTc.*_ga_7MR6HLD4F7*MTcxMDk4NDIzMi4xNy4xLjE3MTA5ODc1MDQuNTYuMC4w"><img src="news_5.png" alt="Image 5"></a>
+    </div>
+    </div>
+    </div>
+
+    <div class="block">
+      <div class="promoContainer card1">
+        <div class="promoBox1">
+      <p1>パーツ</p1>
+      <p>GENUINE PARTS</p>
+        <a href="https://kawasaki-onlineshop.jp/shop/partscatalog/search.aspx?_gl=1*17ew8qu*_ga*MjI1ODg0OTU3LjE3MTAyMzA2NTc.*_ga_7MR6HLD4F7*MTcxMDk4NDIzMi4xNy4xLjE3MTA5ODc1MDQuNTYuMC4w"><img src="news_6.png" alt="Image 6"></a>
+    </div>
+    </div>
+    </div>
+
+    <div class="container1">
+      <div class="greenSpacer1"></div>
+    </div>
+
+
+    <div class="slider-container1">
+      <button id="prevBtn" class="arrow-btn">&#10094;</button>
+      <div class="image-slider">
+          <img src="bottom-slide/-1.jpg" alt="">
+          <img src="bottom-slide/-2.jpg" alt="">
+          <img src="bottom-slide/-3.jpg" alt="">
+          <img src="bottom-slide/-4.jpg" alt="">
+          <img src="bottom-slide/-5.jpg" alt="">
+          <img src="bottom-slide/-6.png" alt="">
+          <img src="bottom-slide/-7.jpg" alt="">
+          <img src="bottom-slide/-8.jpg" alt="">
+          <img src="bottom-slide/-9.jpg" alt="">
+          <!-- Add more images as needed -->
+      </div>
+      <button id="nextBtn" class="arrow-btn">&#10095;</button>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+        <h3>カワサキについて</h3>
+        <ul>
+          <li><a href="#">ヒストリー</a></li> 
+          <li><a href="#">ヘリテージ</a></li> 
+          <li><a href="#">インターナショナルサイト</a></li> 
+      </ul>
+
+      <ul>
+        <li><a href="#">採用情報</a></li> 
+        <li><a href="#">リーガルポリシー</a></li> 
+        <li><a href="#">会社概要</a></li> 
+    </ul>
+      </div>
+    
+
+    <div class="footer-section">
+        <h3>販売店情報</h3>
+        <ul>
+            <li><a href="#">販売店検索</a></li>
+        </ul>
+    </div>
+
+
+    <div class="footer-section">
+      <h3>カワサキ公式メールマガジン</h3>
+      <ul>
+          <li><a href="#">メールマガジンのご登録</a></li>
+          <li><a href="#">メールマガジンの解除</a></li>
+      </ul>
+     </div>
+    </div>
+
+    <div class="footer-content">
+      <div class="footer-section">
+          <h3>ニュース</h3>
+          <ul>
+              <li><a href="#">New モデル</a></li>
+              <li><a href="#">受賞歴・レビュー</a></li>
+              <li><a href="#">イベント</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">ニュース</a></li>
+        </ul>
+        </div>
+      
+  
+      <div class="footer-section">
+          <h3>その他</h3>
+          <ul>
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">業界リンク</a></li>
+              <li><a href="#">FAQ</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3></h3>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- Add more sections as needed -->
+
+    <div class="footer-social">
+      <div class="footer-phrase">
+    <p>Connect with us for the latest updates!</p>
+     </div>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
+</footer>
+</div>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slider = document.querySelector('.image-slider');
+
+    // Event listener for clicking on the previous button
+    prevBtn.addEventListener('click', function() {
+        slider.scrollLeft -= slider.offsetWidth;
+    });
+
+    // Event listener for clicking on the next button
+    nextBtn.addEventListener('click', function() {
+        slider.scrollLeft += slider.offsetWidth;
+    });
+
+    // Event listener for keyboard arrow keys
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {
+            slider.scrollLeft -= slider.offsetWidth;
+        } else if (event.key === 'ArrowRight') {
+            slider.scrollLeft += slider.offsetWidth;
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
